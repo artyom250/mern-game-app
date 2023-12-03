@@ -1,10 +1,10 @@
 const express = require('express');
 const cors = require("cors");
-const routes = require("./router");
+const router = require("./router");
 const app = express();
 
 app.use(cors());
-app.use(routes);
+app.use(router);
 
 app.listen(3000, function() {
     console.log("🚀 Server is live");
