@@ -1,0 +1,99 @@
+.Page {
+    padding: 50px 100px 150px 100px;
+}
+
+.game-flex {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.data {
+    width: 400px;
+}
+
+.title {
+    font-weight: 700;
+    margin: 25px 0px;
+    font-size: 30px;
+    max-width: 350px;
+    text-align: center;
+}
+
+.banner {
+    display: flex;
+    overflow: hidden;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.4);
+}
+
+.banner img {
+    width: 100%;
+}
+
+.about {
+    color: grey;
+    font-size: 15px;
+    margin-top: 50px;
+    line-height: 1.9em;
+    max-width: 700px;
+}
+
+.info {
+    background: rgb(15, 15, 15);
+    padding: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.desc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.desc:not(:nth-child(1)) {
+    margin-top: 20px;
+}
+
+.desc p:nth-child(1) {
+    color: grey;
+}
+
+.pay {
+    margin-top: 25px;
+}
+
+.buy {
+    color: white;
+    background-color: blue;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-weight: 700;
+    padding: 20px 40px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.buy:hover {
+    background-color: mediumblue;
+}
+
+.buy-icon {
+    font-size: 24px;
+}
+
+.buy.cart {
+    color: black;
+    background-color: white;
+    margin-top: 10px;
+}
+

@@ -1,0 +1,100 @@
+.Main a {
+    color: white;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+#center-t {
+    margin-top: 125px;
+}
+
+.image {
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.image::before {
+    content: "";
+    position: absolute;
+    background: rgb(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.swiper-slide {
+    display: flex;
+    max-width: 400px;
+    font-size: 15px;
+}
+
+.swiper-slide:hover .image::before {
+    opacity: 1;
+}
+
+.swiper-slide:hover img {
+    transform: scale(1.1);
+}
+
+.swiper-slide img {
+    width: 100%;
+    transition: 0.2s;
+}
+
+.name {
+    margin-top: 25px;
+    font-weight: 700;
+}
+
+.devs {
+    color: grey;
+    margin-top: 5px;
+}
+
+.name, .devs {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    gap: 25px;
+}
+
+.sale {
+    background-color: blue;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+
+.sale:empty {
+    display: none;
+}
+
+.old {
+    color: grey;
+    text-decoration: line-through;
+}
+
+.old:empty {
+    display: none;
+}
+
+.new {
+    font-weight: 700;
+}
+
